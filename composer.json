@@ -1,0 +1,12 @@
+{
+    "name": "keith/bedrock",
+    "description": "This is the base for all WordPress websites I develop.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "nomad-mystic",
+            "email": "nomadmystics@gmail.com"
+        }
+    ],
+    "require": {}
+}
