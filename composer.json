@@ -8,5 +8,12 @@
             "email": "nomadmystics@gmail.com"
         }
     ],
-    "require": {}
+    "autoload": {
+        "psr-4": {
+            "Bedrock\\":"commands/"
+        }
+    },
+    "require": {
+        "wp-cli/wp-cli-bundle": "*"
+    }
 }
