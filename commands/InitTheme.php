@@ -8,7 +8,7 @@ use WP_CLI;
  *
  */
 if ( defined( 'WP_CLI' ) && WP_CLI ) {
-    class InitTheme extends \WP_CLI_Command
+    class InitTheme extends \WPCOM_VIP_CLI_Command
     {
         /**
          * Retrieves a list of registered block types, or the object for a registered block type if single block type requested.
@@ -28,3 +28,8 @@ if ( defined( 'WP_CLI' ) && WP_CLI ) {
     } catch (\Exception $e) {
     }
 }
+
+$foo_command = function( $args ) {
+    WP_CLI::success( $args[0] );
+};
+WP_CLI::add_command( 'foo', $foo_command );
