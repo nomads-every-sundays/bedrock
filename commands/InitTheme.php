@@ -31,6 +31,17 @@ if ( defined( 'WP_CLI' ) && WP_CLI ) {
     }
 }
 
+/**
+ * My awesome closure command
+ *
+ * <message>
+ * : An awesome message to display
+ *
+ * --append=<message>
+ * : An awesome message to append to the original message.
+ *
+ * @when before_wp_load
+ */
 $foo_command = function( $args ) {
     WP_CLI::success( $args[0] );
 };
