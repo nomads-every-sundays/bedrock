@@ -32,4 +32,4 @@ if ( defined( 'WP_CLI' ) && WP_CLI ) {
 $foo_command = function( $args ) {
     WP_CLI::success( $args[0] );
 };
-WP_CLI::add_command( 'foo', $foo_command );
+WP_CLI::add_command( 'Bedrock foo', $foo_command );
