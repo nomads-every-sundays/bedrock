@@ -11,11 +11,13 @@ if ( defined( 'WP_CLI' ) && WP_CLI ) {
     class InitTheme extends \WPCOM_VIP_CLI_Command
     {
         /**
-         * Retrieves a list of registered block types, or the object for a registered block type if single block type requested.
+         * Prints a greeting.
          *
          * ## EXAMPLES
          *
-         *   $ wp Bedrock InitTheme
+         *     wp example hello Newman
+         *
+         * @when after_wp_load
          */
         public function __invoke(): void
         {
